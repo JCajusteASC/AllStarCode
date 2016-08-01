@@ -1,0 +1,11 @@
+def draw():
+x= randrange (5,50)
+color= randrange (0,255)
+nostroke()
+fill(color)
+ellipse(mouseX, mouseY, x,x)
+for i range (randrange(15))
+     splatX=randrange(-50,-50)
+     splatY=randrange(-50,-50)
+     splatSize= randrange(int(x/4), int(x/2))
+     ellipse(splatX, splatY,splatSize)

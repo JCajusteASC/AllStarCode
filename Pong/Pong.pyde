@@ -9,7 +9,7 @@ moveX2 = 50
 moveY2 = 50
 speedX2 = 1
 speedY2 = 1
-
+player2 = 300
 
 def setup():
     
@@ -27,6 +27,7 @@ def draw():
     global speedY2
     global moveX2
     global moveY2
+    global player2
     moveX2 = moveX2 + speedX2
     moveY2 = moveY2 + speedY2
     moveX= moveX + speedX
@@ -61,6 +62,12 @@ def draw():
     if moveX2 < 200:
         speedX2 = speedX2 * -1
         
+    rect(400,450,100,25)
+    fill(0,255,255)
+    if keyPressed and key == 'a':
+        player2 = player2 + 10
+    
+    if keyPressed and key == 'd': 
+        player2 = player2 - 10
 
    
-    
