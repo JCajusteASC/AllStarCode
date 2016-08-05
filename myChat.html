@@ -1,0 +1,46 @@
+ <html>
+  <head>
+  </head>
+  <body>
+  <style type="text/css">
+body{
+text-align:left;  
+background-image: url("http://i.stack.imgur.com/B83HT.jpg"); 
+color: green;
+font-family: 'Orbitron', sans-serif;  
+}
+
+button {
+background-color: blue;
+border-radius: 12px;
+}
+
+p{
+font-size: 200%;
+}
+</style>
+    <!-- What user will use for input -->
+    <input placeholder='Name' type='text' id='name'>
+    <input placeholder='Message' type='text' id='message'>
+    <!-- button for sending message to message board -->
+    <button onclick='sendMessage()' id='js'>chatUp</button>
+    <!-- Empty div where the messages will show up -->
+    <div id='messageBoard'></div>
+    <!-- Paste your snippet here, will include firebase CDN -->
+    <script src="https://www.gstatic.com/firebasejs/3.2.1/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyAJ6ZD7kv8cvTvdZBawZlZbEJzrg8H46dQ",
+        authDomain: "messageasc-a2e97.firebaseapp.com",
+        databaseURL: "https://messageasc-a2e97.firebaseio.com",
+        storageBucket: "messageasc-a2e97.appspot.com",
+      };
+      firebase.initializeApp(config);
+    </script>
+    <!-- adding jQuery -->
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+    <!-- script we'll make dynamic changes with. You'll have to create this file -->
+    <script src='myChat.js'></script>
+  </body>
+</html>
