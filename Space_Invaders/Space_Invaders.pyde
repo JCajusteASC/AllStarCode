@@ -62,14 +62,12 @@ def draw():
 
     
     for i in range(len(aliens)):
-        #if aliens[i] == 0:
-        for j in range(len(aliens[i])):
-            if aliens[i][j] == 0 :
-                ellipse(i*75 + 150, j*75 + 50, 50, 50)        
-            '''
-            if yB == j*100+50 and xB == i*100+100 :
-                aliens.pop([i][j])
-            '''
+            for j in range(len(aliens[i])):
+                if aliens[i][j] == 0:
+                    ellipse(i*75 + 150, j*75 + 50, 50, 50)        
+                if yB == j*100+50 and xB == i*100+100:
+                    aliens.pop([i][j])
+                        
     
             
     

@@ -53,7 +53,7 @@ def draw():
         speedY = speedY * -1
     
     
-    rect(mouseX, 50, 100, 50)
+    rect(mouseX, 50, 100, 25)
     fill(255,0,0)
     
     if moveX2 > 500:
@@ -62,12 +62,13 @@ def draw():
     if moveX2 < 200:
         speedX2 = speedX2 * -1
         
-    rect(400,450,100,25)
+    rect(player2,450,100,25)
     fill(0,255,255)
-    if keyPressed and key == 'a':
+    
+    if keyPressed and key == 'd':
         player2 = player2 + 10
     
-    if keyPressed and key == 'd': 
+    if keyPressed and key == 'a': 
         player2 = player2 - 10
 
    
